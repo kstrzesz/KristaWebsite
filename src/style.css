@@ -1,0 +1,13 @@
+body {
+  background-color: #eee1b3;
+}
+h1 {
+  color: #330036;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 300%;
+  text-align: center;
+  text-shadow: 2px 1px #56666b;
+}
+.HomePageButtons {
+  color: #ffffff;
+}
