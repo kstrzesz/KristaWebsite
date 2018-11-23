@@ -1,0 +1,11 @@
+{
+  "heading": {
+    "color": "#330036",
+    "fontFamily": "Geneva",
+    "fontSize": 60,
+    "textAlign": "left"
+  },
+  "AllButtons": {
+    "background": "transparent"
+  }
+}

@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
-import './style.css';
-import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
+import AllButtons from './AllButtons';
+const style = require('./style.json');
 
-class AllButtons extends Button {
-  render() {
-    return(
-      <div>
-        <Button className='HomePageButtons'>about</Button>
-      </div>
-    )
-  }
-}
+
 class Home extends Component {
   render() {
+    const { classes } = this.props
     return (
       <div>
-        <h1>Krista Strzeszkowski </h1>
-        <div>
-        </div>
-        <AllButtons />
+        <div className={classes.AllButtons}><AllButtons /></div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1 className={classes.heading}>
+          krista <br/> strzeszkowski
+        </h1>
       </div>
     )
   }
 }
-export default Home;
+export default withStyles(style)(Home);
