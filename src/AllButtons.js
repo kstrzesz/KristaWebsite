@@ -6,8 +6,14 @@ const style = require('./style.json');
 
 class Buttons extends Component {
   render() {
-    return ( 
-      <Button component={Link} to="/About">About</Button>
+    const { classes } = this.props
+    return (
+      <React.Fragment> 
+        <Button className={classes.allButtons} component={Link} to="/About">about</Button>
+        <Button className={classes.allButtons} component={Link} to="/Projects">projects</Button>
+        <Button className={classes.allButtons} component={Link} to="/Blog">blog</Button>
+        <Button className={classes.allButtons} component={Link} to="/Feedback">feedback</Button>
+      </React.Fragment>
     )
   }
 }

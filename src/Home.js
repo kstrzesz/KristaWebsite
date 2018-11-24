@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid'
 import AllButtons from './AllButtons';
 const style = require('./style.json');
 
@@ -9,7 +10,20 @@ class Home extends Component {
     const { classes } = this.props
     return (
       <div>
-        <div className={classes.AllButtons}><AllButtons /></div>
+
+    <Grid
+      justify="space-between" // Add it here :)
+      container 
+      spacing={24}
+    >
+      <Grid item xs={8} />
+      <Grid item xs={4}>
+        <div>
+          <AllButtons />
+        </div>
+      </Grid>
+      
+    </Grid>
         <br/>
         <br/>
         <br/>
