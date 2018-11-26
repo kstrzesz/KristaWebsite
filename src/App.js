@@ -1,7 +1,7 @@
-import React from 'react'
-import { Route, Switch } from 'react-router-dom'
-import Home from './Home'
-import About from './About'
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import Home from './Home';
+import About from './About';
 
 class App extends React.Component {
   render() {
@@ -12,7 +12,7 @@ class App extends React.Component {
           <Route exact path="/about" component={About} />
         </Switch>
       </React.Fragment>
-    )
+    );
   }
 }
 
